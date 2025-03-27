@@ -50,3 +50,16 @@ Runs entirely **offline** using [Ollama](https://ollama.com) + [Mistral LLM](htt
 ```bash
 git clone https://github.com/devYRPauli/Resume-Optimizer.git
 cd Resume-Optimizer
+```
+
+---
+
+### 🧠 2. Install Ollama + Pull Mistral
+Run the setup script:
+```bash
+bash ollama_model.sh
+```
+This installs Ollama and pulls the Mistral model locally.
+(Make sure you allow permissions if prompted.)
+
+---
