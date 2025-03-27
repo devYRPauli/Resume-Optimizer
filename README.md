@@ -1,28 +1,44 @@
+# 📄 Resume Match Analyzer
 
-# Resume Match Analyzer 🧠📄
+A smart Streamlit-based tool that analyzes how well your resume aligns with a job description — all powered **locally** by [Ollama](https://ollama.com) and the open-source [Mistral LLM](https://ollama.com/library/mistral). No internet-based LLMs or API keys required.
 
-Upload your resume and compare it against any job description to see how well it matches. Powered by Mistral via Ollama — runs completely locally.
+---
 
-## 🚀 How to Run
+## 🚀 Features
 
-1. Clone or download this repo
-2. Run the setup script:
+✅ Upload your resume in **PDF, DOCX, or TXT**  
+✅ Paste any job description  
+✅ Extract keywords from both, **grouped by category**:
+- Technical Skills  
+- Tools & Technologies  
+- Certifications  
+- Responsibilities  
+- Soft Skills  
+
+✅ Get:
+- ✅ Matched Keywords
+- ❌ Missing Keywords
+- 📊 Match Score (in %)
+- 📥 Option to **download missing keywords**
+
+---
+
+## 🧠 Powered By
+
+- [Streamlit](https://streamlit.io/) – frontend UI  
+- [Ollama](https://ollama.com) – local LLM backend  
+- [Mistral](https://ollama.com/library/mistral) – open-source language model  
+- [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) – PDF parsing  
+- `python-docx` – DOCX parsing  
+
+---
+
+## 🛠 Installation
+
+> ⚠️ This app runs entirely **offline** using Ollama. Make sure your system supports it (macOS, Linux, or Windows with WSL).
+
+### 1. Clone the Repository
+
 ```bash
-bash ollama_model.sh
-```
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-4. Launch the app:
-```bash
-streamlit run app.py
-```
-
-## 🧩 Features
-- Upload PDF, DOCX, or TXT resumes
-- Paste job descriptions
-- Get categorized keyword comparison
-- Match score + download missing keywords
-
-All powered locally via [Ollama](https://ollama.com) and [Mistral](https://ollama.com/library/mistral).
+git clone https://github.com/your-username/resume-analyzer.git
+cd resume-analyzer
