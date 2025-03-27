@@ -26,11 +26,11 @@ Runs entirely **offline** using [Ollama](https://ollama.com) + [Mistral LLM](htt
 
 ## 🧠 How It Works
 
-1. Parse your resume text from PDF/DOCX/TXT
+1. Parse your resume text from PDF, DOCX, or TXT
 2. Use a local LLM (Mistral via Ollama) to extract structured keywords
-3. Extract similar keywords from the job description
-4. Compare both sets and calculate a match score
-5. Display results, category-wise, with download option
+3. Extract keywords from the job description in the same way
+4. Compare both keyword sets and calculate a match score
+5. Display results by category, with download options
 
 ---
 
@@ -59,7 +59,7 @@ Run the setup script:
 ```bash
 bash ollama_model.sh
 ```
-This installs Ollama and pulls the Mistral model locally.
+This will install Ollama and download the Mistral model locally.
 (Make sure you allow permissions if prompted.)
 
 ---
@@ -77,7 +77,7 @@ Launch the app with:
 ```bash
 streamlit run app.py
 ```
-It will open in your browser at:
+Then open your browser and go to:
 ```bash
 http://localhost:8501
 ```
@@ -97,8 +97,9 @@ Resume-Optimizer/
 ---
 
 ### 📦 How to Share or Distribute
-You can zip this repo and send it to others — it works entirely offline!
-Once unzipped, they just run:
+This project works 100% offline.   
+To share it with others, just zip the folder and send it.   
+Once unzipped, they simply run:
 ```bash
 bash ollama_model.sh
 pip install -r requirements.txt
@@ -113,12 +114,12 @@ streamlit run app.py
 - [Ollama](https://ollama.com/) – local LLM runner
 - [Mistral LLM](https://docs.mistral.ai/) – model used for keyword extraction
 - [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) – PDF parser
-- ```bash python-docx ``` – Word parser
+- `bash python-docx ` – Word parser
 
 ---
 
 ### 💬 Contributing
-Pull requests and feedback welcome!
+Pull requests and feedback welcome!   
 Feel free to fork the repo and submit suggestions to improve keyword scoring, UI, or logic.
 
 ---
