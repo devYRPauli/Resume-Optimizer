@@ -1,6 +1,7 @@
 # 📄 Resume Match Analyzer
 
-A smart Streamlit-based tool that analyzes how well your resume aligns with a job description — all powered **locally** by [Ollama](https://ollama.com) and the open-source [Mistral LLM](https://ollama.com/library/mistral). No internet-based LLMs or API keys required.
+A smart, privacy-first tool to analyze how well your resume aligns with a job description.  
+Runs entirely **offline** using [Ollama](https://ollama.com) + [Mistral LLM](https://ollama.com/library/mistral) — no API keys or internet required!
 
 ---
 
@@ -8,37 +9,44 @@ A smart Streamlit-based tool that analyzes how well your resume aligns with a jo
 
 ✅ Upload your resume in **PDF, DOCX, or TXT**  
 ✅ Paste any job description  
-✅ Extract keywords from both, **grouped by category**:
-- Technical Skills  
-- Tools & Technologies  
-- Certifications  
-- Responsibilities  
-- Soft Skills  
+✅ Extract short, relevant **keywords grouped by category**:
+- Technical Skills
+- Tools & Technologies
+- Certifications
+- Responsibilities
+- Soft Skills
 
-✅ Get:
+✅ Receive:
 - ✅ Matched Keywords
 - ❌ Missing Keywords
-- 📊 Match Score (in %)
-- 📥 Option to **download missing keywords**
+- 📊 Match Score (based on overlap)
+- 📥 Downloadable list of missing keywords
 
 ---
 
-## 🧠 Powered By
+## 🧠 How It Works
 
-- [Streamlit](https://streamlit.io/) – frontend UI  
-- [Ollama](https://ollama.com) – local LLM backend  
-- [Mistral](https://ollama.com/library/mistral) – open-source language model  
-- [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) – PDF parsing  
-- `python-docx` – DOCX parsing  
+1. Parse your resume text from PDF/DOCX/TXT
+2. Use a local LLM (Mistral via Ollama) to extract structured keywords
+3. Extract similar keywords from the job description
+4. Compare both sets and calculate a match score
+5. Display results, category-wise, with download option
 
 ---
 
-## 🛠 Installation
+## 💻 Local Installation & Usage
 
-> ⚠️ This app runs entirely **offline** using Ollama. Make sure your system supports it (macOS, Linux, or Windows with WSL).
+### ⚙️ Prerequisites
 
-### 1. Clone the Repository
+- Python 3.8+
+- Linux/macOS or Windows (via WSL)
+- [Ollama](https://ollama.com) installed
+- ~4GB space to pull the Mistral model
+
+---
+
+### 🔧 1. Clone This Repository
 
 ```bash
-git clone https://github.com/your-username/resume-analyzer.git
-cd resume-analyzer
+git clone https://github.com/devYRPauli/Resume-Optimizer.git
+cd Resume-Optimizer
