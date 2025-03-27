@@ -124,7 +124,7 @@ Feel free to fork the repo and submit suggestions to improve keyword scoring, UI
 ---
 
 ### 📜 License
-MIT License
+MIT License  
 © 2025 [@devYRPauli](https://github.com/devYRPauli)
 
 ---
